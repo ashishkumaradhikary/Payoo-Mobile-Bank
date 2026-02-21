@@ -40,8 +40,8 @@
                     <fieldset class="fieldset space-y-2">
                         <label class="label font-bold text-base ">Mobile Number</label>
                         <input id="mobile-number"  type="text" maxlength="11" minlength="11" class="input rounded-3xl bg-slate-100 w-[300px]" placeholder="Enter your number" />
-                        <label class="label font-bold text-base">4 Digit PIN</label>
-                        <input id="pin" type="password" maxlength="4" minlength="4" class="input rounded-3xl bg-slate-100 w-[300px]" placeholder="Enter 4 Digit PIN" />
+                        <label class="label font-bold text-base">Password</label>
+                        <input id="pin" type="password" maxlength="4" minlength="4" class="input rounded-3xl bg-slate-100 w-[300px]" placeholder="Enter your password" />
                         <button id="btn-login" class="btn mt-1 bg-primary rounded-3xl w-[300px]"><span class="text-blue-50">Login</span></button>
                     </fieldset>
                 </div>
@@ -50,19 +50,7 @@
     </div>
 
     <!-- javaScript Code -->
-     <script>
-        document.getElementById('btn-login').addEventListener('click', function(){
-            let mobileNumber = document.getElementById('mobile-number').value;
-            let pin = document.getElementById('pin').value;
-
-            if (mobileNumber == '01234567890' && pin == '1234'){
-                alert('Login Success')
-                window.location.assign("./home.html")
-                document.getElementById('mobile-number').value = "";
-            } else {
-                alert(' Sorry! Wrong Mobile Number or PIN')
-            }
-        })
-     </script>
+     <script src="./script/login.js"></script>
+    
 </body>
 </html>
